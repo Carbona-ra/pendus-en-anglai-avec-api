@@ -1,0 +1,111 @@
+#word-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#word-container div{
+    margin: 5px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2e86de;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#reponse, #word-container {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+#reponse {
+    color: #c0392b;
+}
+
+.centrer {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+input#letter {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #2e86de;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input#letter:focus {
+    border-color: #2ecc71;
+}
+
+input#subButton {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2e86de;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input#subButton:hover {
+    background-color: #3498db;
+}
+
+#word-container {
+    letter-spacing: 0.4rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+#score {
+    font-size: 2rem;
+    text-align: center;
+    color: #27ae60;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input#letter, input#subButton {
+        font-size: 1.2rem;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+}
